@@ -7,7 +7,7 @@ async function action({ params }) {
   const { id } = params;
 
   const component = id ? (
-    <img src={`images/${id}`} alt={id} />
+    <img src={`/images/${id}`} alt={id} />
   ) : (
     <Layout>
       <Resource />
