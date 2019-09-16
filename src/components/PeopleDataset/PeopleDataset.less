@@ -1,0 +1,129 @@
+.root {
+  padding: 100px 0 60px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.goBack {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(119, 98, 140, 0.5);
+  margin-right: 20px;
+
+  &:hover {
+    color: #77628c;
+  }
+}
+
+.promptText {
+  margin: 20px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #77628c;
+  display: inline-flex;
+  align-items: center;
+}
+
+.noteText {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.infoTextBox {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(119, 98, 140, 0.05);
+  border: 1px solid rgba(119, 98, 140, 0.5);
+  border-radius: 5px;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: #77628c;
+  margin-right: 15px;
+}
+
+.infoValue {
+  padding: 1px 3px;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  color: rgb(86, 116, 130);
+  background-color: rgb(243, 246, 250);
+  border-radius: 8px;
+}
+
+.picRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picBox {
+  background-color: rgba(119, 98, 140, 0.05);
+  border: 1px solid rgba(119, 98, 140, 0.5);
+  border-radius: 5px;
+  min-height: 350px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+}
+
+.emptyPicBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  .picBox;
+}
+
+&:global {
+  .ant-cascader-menu::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .ant-cascader-menu::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .ant-cascader-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  .ant-cascader-menu::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .ant-cascader-picker {
+    min-width: 182px;
+  }
+
+  .ant-input:hover {
+    border-color: #77628c;
+  }
+
+  .ant-input:focus {
+    border-color: #77628c;
+    box-shadow: 0 0 0 2px rgba(119, 98, 140, 0.2);
+  }
+
+  .ant-cascader-picker:focus .ant-cascader-input {
+    border-color: #77628c;
+    box-shadow: 0 0 0 2px rgba(119, 98, 140, 0.2);
+  }
+
+  .ant-cascader-menus ul,
+  .ant-cascader-menus ol {
+    height: 260px;
+  }
+}

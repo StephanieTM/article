@@ -1,0 +1,63 @@
+.pictureContainer {
+  display: inline-flex;
+  margin: 10px;
+  cursor: pointer;
+  background: #e3e7f1;
+  min-width: 100px;
+
+  & > img {
+    max-width: 290px;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px #77628c;
+  }
+}
+
+.modalText {
+  font-size: 18px;
+}
+
+.picRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.modalPicContainer {
+  display: inline-flex;
+  margin: 10px;
+  background: #e3e7f1;
+
+  & > img {
+    max-width: 150px;
+    max-height: 100px;
+    margin: 0 auto;
+  }
+}
+
+&:global {
+  .ant-modal {
+    width: 70vw !important;
+  }
+
+  .ant-modal-content {
+    height: 75vh;
+    width: 70vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -37.5vh;
+    margin-left: -35vw;
+  }
+}
