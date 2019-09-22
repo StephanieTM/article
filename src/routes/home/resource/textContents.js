@@ -121,13 +121,13 @@ const download = {
             <span
               style={{ display: 'block', fontSize: '23px', fontWeight: '700' }}
             >
-              Json
+              NT Files
             </span>
             <span style={{ display: 'block' }}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/open?id=1iWRnsAybp6PY8aEtRZoAk1vvlcV1BnZO"
+                href="https://drive.google.com/drive/folders/1---n-BKB8ZUhTmURh6qzSwNMopzWmCmZ?usp=sharing"
               >
                 Triples
               </a>
